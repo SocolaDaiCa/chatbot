@@ -20,7 +20,6 @@
 	foreach($html->find('table[class=table search-results]') as $key => $element){
 		foreach ($element->find('tr') as $tr) {
 			$td = $tr->find('td', 1);
-			// echo ($td)->plaintext . '<br>';
 			$phuongTrinh = $td->plaintext;
 			$phuongTrinh = str_replace('&rarr;', '→', $phuongTrinh);
 			$arrTexts[$key] .= $phuongTrinh . "\n";

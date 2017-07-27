@@ -22,7 +22,11 @@
 			return $url;
 		return $url.'?'.http_build_query($param);
 	}
-	function getJSON($url, $param =null){
+	function getJSON($url, $param =null, $method = 'GET'){
+		if($method === 'POST'){
+			$data = cURLPost($url, $param);
+			return json_decode($data);
+		}
 		return json_decode(cURL(getUrl($url, $param)));
 	}
 	function cURLPost($url, $param, $browser = BROWSER_DEFAUT)

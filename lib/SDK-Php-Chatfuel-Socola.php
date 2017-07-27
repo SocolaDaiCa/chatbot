@@ -167,7 +167,8 @@
 
 	    public function sendGallery($elements){
 	    	if(empty($elements[0]['title']))
-	    		return FALSE;
+	    		$elements = array($elements);
+	    	// 	return FALSE;
 
             $this->sendAttachment('template', array(
                 'template_type' => 'generic',
@@ -268,8 +269,8 @@
 				// header('Content-Type: text/html; charset=utf-8');
 				// $data = json_decode($data, false, 512, JSON_UNESCAPED_UNICODE);
 				// $data = json_encode($this, JSON_UNESCAPED_LINE_TERMINATORS);
-				$data = json_encode($this, JSON_UNESCAPED_UNICODE);
-				// $data = json_encode($this, JSON_PRETTY_PRINT);
+				// $data = json_encode($this, JSON_UNESCAPED_UNICODE);
+				$data = json_encode($this, JSON_PRETTY_PRINT);
 				echo($data);
 			}else{
 				echo json_encode($this);

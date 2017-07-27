@@ -1,5 +1,6 @@
-<?php 
-	require_once __DIR__ . "/../lib/SDK-Php-Chatfuel-Socola.php";
+<?php
+	require_once 'define.php';
+	require_once PATH_LIB . 'SDK-Php-Chatfuel-Socola.php';
 	if(!isset($debug))
 		$debug = TRUE;
 	if(!isset($validate))

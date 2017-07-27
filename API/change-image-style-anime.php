@@ -35,7 +35,7 @@
         // echo  "Result: " . $result;
         file_put_contents($realpath, $result);
     }
-    $host = 'https://aa1aa1c0.ap.ngrok.io/chatbot';
+    $host = 'https://chatbot.tentstudy.xyz/';
     $image = "{$host}/API/{$pathImageSaved}";
     $bot->sendImage($image);
 ?>

@@ -1,7 +1,6 @@
 <?php
-	require_once 'define.php';
-	require_once __DIR__ . '/construct.php';
-	require_once PATH_DB . '/../db/connect.php';
+	require_once 'construct.php';
+	require_once PATH_DB . 'connect.php';
 	function randomImage()
 	{
 		global $conn;

@@ -18,7 +18,7 @@
 	if($result < 18.5){
 		$msg = 'bạn hơi ốm.';
 	} elseif ($result < 23) {
-		$msg = 'bạn có thâm hình thật cân đối.';
+		$msg = 'bạn có thân hình thật cân đối.';
 	} elseif ($result < 25) {
 		$msg = 'bạn sắp béo phì.';
 	} elseif ($result < 30) {
